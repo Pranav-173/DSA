@@ -14,7 +14,7 @@
 					   /-|    ---|   --\- -|--
 				   ___/  |___   _|_   ^ \__|---> (Siblings)
 	(Child Node)  | H |  | I | | J |  |                         (Level 3)
-				   ---   ---    ---   |
+				   ---    ---   ---   |
                        ^              (Leaf Node)
 					   |
 					(Sub-Tree)
