@@ -1,6 +1,4 @@
-import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 public class AdjacencyList {
     public static void addEdge(List<List<Integer>> adj, int i, int j) {
