@@ -6,9 +6,9 @@ public class DS_Uniform_binarysearch {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the Array: ");
         int size = sc.nextInt();
-        System.out.println("Enter array elements: ");
+        System.out.println("Enter Array elements: ");
         int arr[] = new int[size];
-        for(int i = 0 ; i < size;i++) {
+        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println("Entered Array: " + Arrays.toString(arr));
@@ -16,8 +16,8 @@ public class DS_Uniform_binarysearch {
         int key = sc.nextInt();
         int result = binunisearch(arr, key);
         if (result != -1) {
-            System.out.println("Element " + key + " Found at Index: "+ result);
-        } else{
+            System.out.println("Element " + key + " Found at Index: " + result);
+        } else {
             System.out.println("Element " + key + " was NOT Found in the entered Array.");
         }
     }
@@ -28,11 +28,11 @@ public class DS_Uniform_binarysearch {
         System.out.println("k = " + k);
         int[] offset = new int[k+1];
         offset[0] = 1 << k;
-        for(int i = 1; i <= k; i++) {
-            offset[i] = offset[i-1]/2;
+        for (int i = 1; i <= k; i++) {
+            offset[i] = offset[i-1] / 2;
         }
         int index = -1;
-        for (int i = 0; i <= k ; i ++) {
+        for (int i = 0; i <= k; i++) {
             int next = index + offset[i];
             if (next < n && arr[next] <= key) {
                 index = next;                  
