@@ -36,14 +36,14 @@ class Queue {
             System.out.println("Queue is Empty.");
             return;
         }
-        System.out.println("Front element is: "+ arr[front]);
+        System.out.println("Front element is: " + arr[front]);
     }
     public void display() {
         if (isEmpty()) {
             System.out.println("Queue is Empty.");
             return;
         }
-        System.out.println("Queue Elements: ");
+        System.out.println("Queue elements: ");
         for (int i = front; i <= rear; i++) {
             System.out.print(arr[i] + " ");
             System.out.println();
@@ -61,7 +61,7 @@ class Queue {
         int capacity = sc.nextInt();
         Queue queue = new Queue(capacity);
         while (true) {
-            System.out.println("***** Queue Operations *****");
+            System.out.println("***Queue Operations***");
             System.out.println("1. Enqueue\n2. Dequeue\n3. Peek\n4. Display\n5. Is Full?\n6. Is Empty?\n7. Exit");
             System.out.println("Enter your choice: ");
             int choice = sc.nextInt();
