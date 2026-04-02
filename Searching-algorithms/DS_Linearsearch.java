@@ -8,7 +8,7 @@ public class DS_linearsearch {
         int size = sc.nextInt();
         System.out.println("Enter Array elements: ");
         int arr[] = new int[size];
-        for(int i = 0 ; i < size;i++){
+        for (int i = 0; i < size; i++) {
             arr[i] = sc.nextInt();
         }
         System.out.println("Entered Array: " + Arrays.toString(arr));
@@ -22,8 +22,8 @@ public class DS_linearsearch {
         }
     }
     public static int linearsearch(int[] arr, int key){
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == key){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
                 return i;
             }
         }
