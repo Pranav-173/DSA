@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Hashtable {
+public class HashTable {
     static int size;
     static Dataitem[] hasharray;
     static class Dataitem {
