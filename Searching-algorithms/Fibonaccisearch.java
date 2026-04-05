@@ -2,11 +2,27 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fibonaccisearch {
+    /*
+     * Edge-case behavior:
+     * - Negative size is rejected.
+     * - Size 0 exits early with "Nothing to sort/search".
+     * - Null/empty arrays return not found (-1).
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the length of the array: ");
         int size = sc.nextInt();
+        if (size < 0) {
+            System.out.println("Invalid input: size cannot be negative.");
+            sc.close();
+            return;
+        }
+        if (size == 0) {
+            System.out.println("Nothing to sort/search");
+            sc.close();
+            return;
+        }
 
         int[] arr = new int[size];
         System.out.println("Enter array elements in non-decreasing (sorted) order: ");
@@ -36,6 +52,9 @@ public class Fibonaccisearch {
     }
 
     public static int fibonaccisearch(int[] arr, int key) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
         int n = arr.length;
         int fnminus2 = 0;
         int fnminus1 = 1;
@@ -74,6 +93,9 @@ public class Fibonaccisearch {
     }
 
     public static boolean isSorted(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return true;
+        }
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < arr[i - 1]) {
                 return false;

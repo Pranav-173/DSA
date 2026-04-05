@@ -2,10 +2,26 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Uniform_binarysearch {
+    /*
+     * Edge-case behavior:
+     * - Negative size is rejected.
+     * - Size 0 exits early with "Nothing to sort/search".
+     * - Null/empty arrays return not found (-1).
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the Array: ");
         int size = sc.nextInt();
+        if (size < 0) {
+            System.out.println("Invalid input: size cannot be negative.");
+            sc.close();
+            return;
+        }
+        if (size == 0) {
+            System.out.println("Nothing to sort/search");
+            sc.close();
+            return;
+        }
         System.out.println("Enter Array elements in non-decreasing (sorted) order: ");
         int arr[] = new int[size];
         for (int i = 0; i < size; i++) {
@@ -30,6 +46,9 @@ public class Uniform_binarysearch {
         sc.close();
     }
     public static int binunisearch(int[] arr, int key) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
         int n = arr.length;
         int k = (int)(Math.log(n) / Math.log(2));
         System.out.println("n = " + n);
@@ -52,6 +71,9 @@ public class Uniform_binarysearch {
     }
 
     public static boolean isSorted(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return true;
+        }
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < arr[i - 1]) {
                 return false;

@@ -2,10 +2,26 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Interpolationsearch {
+    /*
+     * Edge-case behavior:
+     * - Negative size is rejected.
+     * - Size 0 exits early with "Nothing to sort/search".
+     * - Null/empty arrays return not found (-1).
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of the Array: ");
         int n = sc.nextInt();
+        if (n < 0) {
+            System.out.println("Invalid input: size cannot be negative.");
+            sc.close();
+            return;
+        }
+        if (n == 0) {
+            System.out.println("Nothing to sort/search");
+            sc.close();
+            return;
+        }
         System.out.println("Enter Array elements in non-decreasing (sorted) order: ");
         int arr[] = new int[n];
         for (int i = 0; i < n; i++) {
@@ -30,6 +46,9 @@ public class Interpolationsearch {
         sc.close();
     }
     public static int interpolationSearch(int arr[], int lo, int hi, int x) {
+        if (arr == null || arr.length == 0 || lo > hi) {
+            return -1;
+        }
         int pos;
         if (lo <= hi && x >= arr[lo] && x <= arr[hi]) {
             if (arr[lo] == arr[hi]) {
@@ -49,6 +68,9 @@ public class Interpolationsearch {
     }
 
     public static boolean isSorted(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return true;
+        }
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < arr[i - 1]) {
                 return false;
