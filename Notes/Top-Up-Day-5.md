@@ -17,12 +17,14 @@ Hash stores the data in an associative manner in an array where each data value 
 
 ### **Hash functions:** 
 There are many hash functions that use numeric or alphanumeric keys. Different hash functions are:
-- Division method
+- **Division method:**
+    <img width="530" height="244" alt="image" src="https://github.com/user-attachments/assets/57bf9d14-bd95-4cc0-b16a-cef3de540345" />
+
 - **Mid square method:**
-  Example:
-  K = 50
-  k 8 k = 2500
-  h(k) = 50
-  The hash value obtained is 50
+    Example:
+    K = 50
+    k*8 k = 2500
+    h(k) = 50
+    The hash value obtained is 50
 - Folding method
 - Multiplication method
