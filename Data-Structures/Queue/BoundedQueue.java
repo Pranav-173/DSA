@@ -6,7 +6,10 @@ public class BoundedQueue {
 		System.out.println("The elements are: ");
 		boundedQueue.add(10);
 		boundedQueue.add(20);
-		boundedQueue.add(30);
+		boolean inserted = boundedQueue.offer(30);
+		if (!inserted) {
+			System.out.println("Insertion failed: queue capacity reached.");
+		}
 		System.out.print(boundedQueue);
 	}
 }
