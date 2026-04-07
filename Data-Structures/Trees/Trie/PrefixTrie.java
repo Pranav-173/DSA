@@ -36,8 +36,12 @@ public class PrefixTrie {
     public static void main(String[] args) {
         PrefixTrie trie = new PrefixTrie();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a String: ");
-        String prefix = sc.nextLine();
-        trie.insert(prefix);
+        System.out.print("Enter a String: ");
+        String word = sc.nextLine();
+        trie.insert(word);
+        System.out.print("Enter prefix to count: ");
+        String query = sc.nextLine();
+        int result = trie.countPrefix(query);
+        System.out.println("Prefix count: " + result);
     }
 }
