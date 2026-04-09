@@ -7,8 +7,7 @@ public class BFS {
     }
     static ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
         int v = adj.size();
-        // BFS forest traversal: iterate vertices in index order so disconnected
-        // components are also visited in a deterministic output order.
+        // BFS forest traversal: Iterate vertices in index order so disconnected components are also visited in a deterministic output order.
         boolean[] visited = new boolean[v];
         ArrayList<Integer> res = new ArrayList<>();   
         for (int s = 0; s < v; s++) {
