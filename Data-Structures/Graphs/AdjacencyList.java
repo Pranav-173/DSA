@@ -4,7 +4,7 @@ public class AdjacencyList {
     private static void validateVertex(List<List<Integer>> adj, int vertex, String name) {
         if (vertex < 0 || vertex >= adj.size()) {
             throw new IllegalArgumentException(
-                name + " index out of bounds: " + vertex + ". Valid range is 0 to " + (adj.size() - 1)
+                name + " Index out of bounds: " + vertex + ". Valid range is 0 to " + (adj.size() - 1)
             );
         }
     }
