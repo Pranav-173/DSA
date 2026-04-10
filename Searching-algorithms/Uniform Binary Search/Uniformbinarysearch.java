@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class Uniform_binarysearch {
+public class Uniformbinarysearch {
     /*
      * Edge-case behavior:
      * - Negative size is rejected.
