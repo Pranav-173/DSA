@@ -1,7 +1,5 @@
 # **Binary Search:**
 
----
-
 ### Definition:
 A divide-and-conquer search that repeatedly halves a **sorted** array by comparing the target with the middle element and discarding the half that cannot contain the target.		    
 		- **Problem:** Search for a given element (`key`) in a **sorted** array using binary search.
