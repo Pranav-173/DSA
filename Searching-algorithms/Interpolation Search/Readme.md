@@ -1,4 +1,4 @@
-## Interpolation Search:
+# Interpolation Search:
 ### Definition:
 A search technique that estimates the position of the target by interpolating within the range of key values (like guessing where a name would fall in a phone book), rather than always probing the midpoint. Works best when keys are **uniformly distributed** and numeric.
   
