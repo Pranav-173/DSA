@@ -4,31 +4,32 @@ It is designed to help understand core concepts through clean, readable, and beg
 The implementations prioritize simplicity and correctness over heavy optimization, making them suitable for learning, revision, and interview preparation.
 
 ---
+
 ## Repository Overview:
 The repository is organized into folders based on topic for better navigation and clarity.
 ## Data-Structures:
 **This directory contains implementations of fundamental data structures in Java, including:**
 
-- Graphs:
+- **Graphs:**
     - Graph (Adjacency List).
     - Graph (Adjacency Matrix).
     - Breadth-First Search (BFS).
     - Depth-First Search (DFS).
     - Dijkstra's algorithm.
-- Hashing:
+- **Hashing:**
     - Hash Table.
-- Linked List:
+- **Linked List:**
     - Circular Linked List. 
     - Doubly Linked List.
     - Singly Linked List.
-- Queue:
+- **Queue:**
     - Bounded Queue.
     - Circular Queue.
     - Priority Queue.
     - Linear Queue.
--Stack:
+- **Stack:**
     - Linear Stack.
-- Trees:
+- **Trees:**
     - Trie:
         - Prefix Array.
         - Prefix Trie.
@@ -40,6 +41,8 @@ The repository is organized into folders based on topic for better navigation an
     - Binary Tree (manual traversal demo).
     - Binary Tree with insert/search/delete.
 
+---
+
 ## Searching-algorithms:
 **This directory includes Java implementations of common searching techniques:**
 - Linear Search.
@@ -49,6 +52,9 @@ The repository is organized into folders based on topic for better navigation an
 - Interpolation Search.
   
 The implementations demonstrate how different searching strategies behave under different conditions.
+
+---
+
 ## Sorting-algorithms:
 **This directory contains Java implementations of basic sorting algorithms such as:**
 - Bubble Sort.
@@ -61,6 +67,9 @@ The implementations demonstrate how different searching strategies behave under 
 - Heap sort.
   
 These programs are written to clearly show algorithm flow and logic rather than micro-optimizations.
+
+---
+
 ## Notes:
 **This directory contains Markdown notes created during the bootcamp sessions.**  
 **The notes explain:**
@@ -70,11 +79,13 @@ These programs are written to clearly show algorithm flow and logic rather than 
 - Day wise concepts.
   
 ---
+
 ## Technology Stack:
 - **Programming Language:** Java.
 - **Development Environment:** Any Java-compatible IDE.
 - **License:** MIT.
 ---
+
 ## How to Use This Repository?
 1. **Clone the repository:**
    ```bash
@@ -86,6 +97,7 @@ These programs are written to clearly show algorithm flow and logic rather than 
    git clone https://github.com/Nullkernel/DSA.git
    ```
 
+---
 
 ## Development Checks
 - Run a Java compile smoke test:
