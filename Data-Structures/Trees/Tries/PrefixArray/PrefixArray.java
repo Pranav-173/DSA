@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class PrefixArray {
     public static int[] computePrefixArray(String s) {
         int n = s.length();
