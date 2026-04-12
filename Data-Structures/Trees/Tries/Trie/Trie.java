@@ -11,14 +11,11 @@ class TrieNode {
         }
     }
 }
-
 public class Trie {
     TrieNode root;
-
     public Trie() {
         root = new TrieNode();
     }
-
     private int getValidatedIndex(char ch, int position, String input) {
         char normalized = Character.toLowerCase(ch);
         int index = normalized - 'a';
@@ -30,7 +27,6 @@ public class Trie {
         }
         return index;
     }
-
     public void insert(String word) {
         TrieNode curr = root;
         for (int i = 0; i < word.length(); i++) {
@@ -42,7 +38,6 @@ public class Trie {
         }
         curr.isEndOfWord = true;
     }
-
     public boolean search(String word) {
         TrieNode curr = root;
         for (int i = 0; i < word.length(); i++) {
@@ -54,7 +49,6 @@ public class Trie {
         }
         return curr.isEndOfWord;
     }
-
     public boolean startsWith(String prefix) {
         TrieNode curr = root;
         for (int i = 0; i < prefix.length(); i++) {
@@ -66,17 +60,14 @@ public class Trie {
         }
         return true;
     }
-
     public static void main(String[] args) {
         Trie trie = new Trie();
-
         // Valid examples (uppercase is normalized to lowercase)
         trie.insert("Apple");
         trie.insert("app");
         System.out.println("search(apple): " + trie.search("apple"));
         System.out.println("search(APP): " + trie.search("APP"));
         System.out.println("startsWith(Ap): " + trie.startsWith("Ap"));
-
         // Invalid example
         try {
             trie.insert("app3");
