@@ -1,4 +1,4 @@
-# Bubble Sort:
+# Heap Sort:
 
 ## What it is?
 Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure (usually a max-heap) to sort elements. It works by first building a heap from the array, then repeatedly extracting the maximum element and placing it at the end of the array.
