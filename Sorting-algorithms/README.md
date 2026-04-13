@@ -1,4 +1,4 @@
-# **Sorting techniques:**  
+# Sorting techniques:  
 Sorting is a fundamental topic in computer science that arranges the elements of a dataset in a specific order, usually ascending or descending. Sorted data enables efficient searching, merging, and analysis, and sorting is a prerequisite for many algorithms. Choosing a sorting technique depends on factors such as:
 
 **Size of the dataset**    
