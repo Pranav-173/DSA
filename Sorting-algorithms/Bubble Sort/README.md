@@ -27,4 +27,3 @@ Given array `A[0..n-1]`:
 ### Other notes:
 - **Stable:** Yes (preserves relative order of equal elements). 
 - **When to use:** Mostly educational or for tiny arrays; simple and stable but inefficient on large datasets.
----
