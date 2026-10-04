@@ -1,99 +1,61 @@
-# `DSA`
-This repository contains Java implementations of **Data Structures and Algorithms** developed during a Data Structures Bootcamp.  
-It is designed to help understand core concepts through clean, readable, and beginner-friendly code.
-The implementations prioritize simplicity and correctness over heavy optimization, making them suitable for learning, revision, and interview preparation.
+# DSA
 
----
+Java implementations of core data structures and algorithms from my DSA practice and bootcamp work.
 
-## Repository Overview:
-The repository is organized into folders based on topic for better navigation and clarity.
-## Data-Structures:
-**This directory contains implementations of fundamental data structures in Java, including:**
+## Coverage
 
-- **Graphs:**
-    - Graph (Adjacency List).
-    - Graph (Adjacency Matrix).
-    - Breadth-First Search (BFS).
-    - Depth-First Search (DFS).
-    - Dijkstra's algorithm.
-- **Hashing:**
-    - Hash Table.
-- **Linked List:**
-    - Circular Linked List. 
-    - Doubly Linked List.
-    - Singly Linked List.
-- **Queue:**
-    - Bounded Queue.
-    - Circular Queue.
-    - Priority Queue.
-    - Linear Queue.
-- **Stack:**
-    - Linear Stack.
-- **Trees:**
-    - Trie:
-        - Prefix Array.
-        - Prefix Trie.
-        - Suffix Array.
-        - Suffix Trie.
-        - Trie.
-    - AVL Tree.
-    - Binary Search Tree.
-    - Binary Tree (manual traversal demo).
-    - Binary Tree with insert/search/delete.
+### Data structures
 
----
+- Graphs: adjacency list/matrix, BFS, DFS, Dijkstra
+- Hash table
+- Singly, doubly, and circular linked lists
+- Linear, circular, bounded, and priority queues
+- Stack
+- Trees: binary tree, BST, AVL tree, trie, prefix/suffix structures
 
-## Searching-algorithms:
-**This directory includes Java implementations of common searching techniques:**
-- Linear Search.
-- Binary Search.
-- Uniform Binary Search.
-- Fibonacci Search.
-- Interpolation Search.
-  
-The implementations demonstrate how different searching strategies behave under different conditions.
+### Searching
 
----
+- Linear search
+- Binary search
+- Uniform binary search
+- Fibonacci search
+- Interpolation search
 
-## Sorting-algorithms:
-**This directory contains Java implementations of basic sorting algorithms such as:**
-- Bubble Sort.
-- Selection Sort.
-- Insertion Sort.
-- Quick Sort.
-- Radix Sort.
-- Merge Sort.
-- Shell Sort.
-- Heap sort.
-  
-These programs are written to clearly show algorithm flow and logic rather than micro-optimizations.
+### Sorting
 
----
+- Bubble sort
+- Selection sort
+- Insertion sort
+- Quick sort
+- Radix sort
+- Merge sort
+- Shell sort
+- Heap sort
 
-## Notes:
-**This directory contains Markdown notes created during the bootcamp sessions.**  
-**The notes explain:**
-- Key concepts.
-- Algorithm intuition.
-- Important observations.
-- Day wise concepts.
-  
----
+## Repository layout
 
-## Technology Stack:
-- **Programming Language:** Java.
-- **Development Environment:** Any Java-compatible IDE.
-- **License:** MIT.
+The implementations are grouped by topic so each algorithm can be compiled and studied independently. The `Notes/` directory contains learning notes from the bootcamp.
 
----
+## Example
 
-## How to Use This Repository?
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Pranav-173/DSA.git
-   ```
-   (or)
-   
-   ```bash
-   git clone https://github.com/amalbijoy/DSA.git
-   ```
+    javac Algorithms/Searching-Algorithms/Binary-Search/BinarySearch.java
+    java -cp Algorithms/Searching-Algorithms/Binary-Search BinarySearch
+
+Check the individual source files for the exact class and package conventions.
+
+## Learning focus
+
+This repository prioritizes readable implementations and understanding algorithm flow over micro-optimizations. For interview preparation, each implementation should eventually have:
+
+- time and space complexity notes
+- edge-case coverage
+- small deterministic tests
+- a short explanation of when the algorithm is preferable
+
+## Provenance
+
+This is my maintained learning repository. Some early material originated from a DSA bootcamp/fork; repository history should be treated as the source of truth for attribution.
+
+## License
+
+MIT
