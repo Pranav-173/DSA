@@ -1,0 +1,19 @@
+name: DSA CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Compile representative implementations
+        run: |
+          mkdir -p build/classes
+          javac -d build/classes             Algorithms/Searching-Algorithms/Binary-Search/BinarySearch.java             Algorithms/Sorting-Algorithms/Quick-Sort/QuickSort_Hoare.java             Data-Structures/Graphs/Dijkstra/Dijkstra.java             Data-Structures/Hash-Table/HashTable.java             Data-Structures/Trees/AVLTree/AVLTree.java
